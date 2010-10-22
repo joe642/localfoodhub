@@ -1,0 +1,139 @@
+#############
+# Page Layout
+#############
+
+
+p.print_header
+{
+	text-align: center;
+}
+
+div.WebControl
+{
+	display: none;
+	}
+
+.no_print
+{
+	display: none;
+}
+
+.invoice
+{
+	page-break-after: always;
+	}
+
+body
+{
+	width: 100%;
+	padding: 2px;
+}
+
+#main_frame
+{
+	}
+
+#banner_frame
+{
+	display: none;
+	}
+
+	
+#control_frame
+{
+	display: none;
+	}
+
+#control_frame form
+{
+
+	}
+
+#control_frame a
+{
+	display: none;
+	}
+#control_frame a:visited
+{
+	}
+#control_frame a:hover
+{
+	}
+
+#menu_frame
+{
+	display: none;
+	}
+
+#date_notice
+{
+	display: none;
+	}
+
+#content
+{
+	position: relative;
+	left: 10px;
+	text-align:left;
+	}
+	
+#footer_frame
+{
+	display:none;
+	}
+
+#basket_frame_container
+{
+	display: none;
+	}
+
+#key_frame
+{
+	display: none;
+	}
+
+#productlist_frame
+{
+	clear: both;
+
+	}
+
+.Control_Panel
+{
+	background-color: #90ee90;
+	padding: 6pt;
+	border: thin solid black;
+	}
+	
+.Main_Head
+{
+	font-size: 14pt;
+	font-family: sans-serif;
+	font-weight:bold;
+	text-align: center;
+	margin: 4pt;
+	}
+
+.Sub_Head
+{
+	font-size: 12pt;
+	font-family: sans-serif;
+	font-weight:bold;
+	text-align: center;
+	margin: 2pt;
+	}
+
+.Panel_Inset
+{
+	background-color: #FFFFFF;
+	border: thin solid black;
+	width:100%;
+	}
+	
+a.Navlink
+{
+	font-size:10pt;
+	font-family: sans-serif;
+	color: purple;
+	text-decoration:none;
+	}
