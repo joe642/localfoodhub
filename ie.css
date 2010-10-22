@@ -1,0 +1,42 @@
+
+#basket_frame_container
+{
+	position: relative;
+	width: 748px;
+	bottom: none;
+	margin: 0px;
+	margin-left: -13px;
+	margin-bottom: 0px;
+	padding: 0px;
+	}
+#basket_frame
+{
+	border: thin solid black;
+	display: block;
+	margin-left: -10px;
+	z-index: 10;
+	background-color: #ddffdd;
+	}
+#basket_frame h3
+{
+	display: block;
+	float: left;
+	height: 25px; 
+	font-size: 10pt;
+	padding: 0px;
+	padding-left: 20px;
+	margin: 0px;
+	}
+#basket_frame a
+{
+	color: black;
+	margin: 0px;
+	padding: 0px;
+	}
+
+
+#productlist_frame
+{
+	clear: both;
+
+	}
