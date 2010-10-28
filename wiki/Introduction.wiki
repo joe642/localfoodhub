@@ -1,13 +1,23 @@
-#summary One-sentence summary of this page.
+#summary Introduction to basic concepts of the food hub software.
 
-= Introduction =
+= Summary =
 
-Add your content here.
+The food hub system differs from a conventional on-line shop in a number of fundamental ways. A normal e-shop allows orders to be placed and then places those orders with (possibly multiple) suppliers for direct delivery. The food hub holds on to orders until the ordering phase is completed and then places consolidated orders with suppliers for delivery to the hub distribution point on the next distribution day. 
 
+This is much better for small independent suppliers as they do not have to handle, or have the overheads associated with, multiple small orders. Suppliers can also specify limited availability and special pricing for different distribution days.
 
-= Details =
+Reduced supplier overheads means reduced prices for the consumer whilst maintaining profit margins for the suppliers. The hub is funded by taking a small mark-up margin on produce sold. In the case of Stroudco this is 8%.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+A vibrant food hub can help stimulate a thriving local food economy and encourage more supplies to sell locally providing more choice for consumers.
+
+= Fundamental Concepts =
+
+== Distribution Day ==
+
+Distribution days are defined by the hub manager. These are the days when the hub has a physical presence, for example Stroudco operates from a local primary school on Saturdays. Orders are delivered to the hub during the morning, sorted by the hub manager and volunteers, and collected by consumers. Suppliers are paid immediately, on the day, to minimise the cash flow issues they often experience with wholesalers or other distribution channels.
+
+== Order Cycle ==
+
+Consumers can place orders up to the cut off date, which is typically 2 full days before the next distribution day. This gives time for the suppliers to prepare their orders for delivery to the hub distribution point. For Stroudco this is midnight on the Wednesday preceding the next distribution day.
+
+At the end of the order phase
