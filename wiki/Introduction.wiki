@@ -14,13 +14,37 @@ A vibrant food hub can help stimulate a thriving local food economy and encourag
 
 == Distribution Day ==
 
-Distribution days are defined by the hub manager. These are the days when the hub has a physical presence, for example Stroudco operates from a local primary school on Saturdays. Orders are delivered to the hub during the morning, sorted by the hub manager and volunteers, and collected by consumers. Suppliers are paid immediately, on the day, to minimise the cash flow issues they often experience with wholesalers or other distribution channels.
+Distribution days are defined by the hub manager. These are the days when the hub has a physical presence, for example Stroudco operates from a local primary school on Saturdays. 
 
-== Members and Producers ==
+Orders are delivered to the hub during the morning, sorted by the hub manager and volunteers, and collected by consumers. Suppliers are paid immediately, on the day, to minimise the cash flow issues they often experience with wholesalers or other distribution channels.
 
-Explain membership and set up of a member (refer to the Stroudco doc).
+== Types of User ==
 
-Producer control panel and member area (check terms)
+There are three types of user. Consumer members who purchase produce, suppliers (or producers) who provide produce for purchase and the hub manager (which may be one person or a shared role).
+
+=== Members ===
+
+Consumer members have agreed to the hub membership terms, see www.stroudco.org.uk for example of these, and been added to the system by the hub manager.
+
+Members may log in, order and pay for produce. They will pick up their orders from the distribution centre at the agreed date and time.
+
+=== Suppliers or Producers ===
+
+The term supplier or producer is used interchangeably - these are the people or businesses that supply goods for the site. 
+
+There are supplier terms and conditions that must be agreed to and then the hub manager can create a member account (if one doesn't exist already) and a supplier account. The member account is linked to the supplier account so that member can access the supplier control panel when logged in.
+
+When logged in to the hub suppliers may switch between their control panel where they specify goods for sale and their shopping basket where they can orders other goods if they wish to.
+
+=== Hub Manager or Administrator ===
+
+Is the person or team that keeps the whole thing ticking over. They log in to the administrator section and can access the administrator pages to manage members and suppliers, configure the hub, create distribution days etc.
+
+The hub manager adds member payments (Receipts) to the system when paid by cheque or bank transfer and this triggers automatic conversion of goods in shopping basket (temp_orders table) into orders (orders) table.
+
+They access the system the morning after an ordering period closes and process purchase orders which are emailed to suppliers. Members are also emailed reminders to collect their order from the distribution centre.
+
+On the distribution day the hub manager receives supplier deliveries and logs them on the system. Sorts these into member orders for pick-up (typically with the help of volunteers), pays suppliers, modifies member invoices (if needed) and finally posts the invoices when all is complete.
 
 == Order Cycle ==
 
