@@ -4,7 +4,7 @@
 
 The v1.0 code uses the Smarty Template Engine for user interface display. This provides a degree of separation of code from display but to understand the code both the php script and the associated Smarty .tpl files need to be examined.
 
-To find which php file perfoms what function just run the hub software standalone (eg. www.yoursite.hub) rather than in a iframe inside Joomla. You can then see the php pages linked from the hub menus. Search a php script for .tpl to find out shich templates it calls. Some pages only call one template but some, for example producer.php call several depending on the actionr equired.
+To find which php file performs what function just run the hub software standalone (eg. www.yoursite.hub) rather than in a iframe inside Joomla. You can then see the php pages linked from the hub menus. Search a php script for .tpl to find out which templates it calls. Some pages only call one template but some, for example producer.php call several depending on the action required.
 
 == Folders ==
 
