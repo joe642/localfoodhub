@@ -12,11 +12,24 @@ A vibrant food hub can help stimulate a thriving local food economy and encourag
 
 = Fundamental Concepts =
 
+
 == Distribution Day ==
 
 Distribution days are defined by the hub manager. These are the days when the hub has a physical presence, for example Stroudco operates from a local primary school on Saturdays. 
 
 Orders are delivered to the hub during the morning, sorted by the hub manager and volunteers, and collected by consumers. Suppliers are paid immediately, on the day, to minimise the cash flow issues they often experience with wholesalers or other distribution channels.
+
+
+== Order Cycle ==
+
+Consumers can place orders up to the cut off date, which is typically 2 full days before the next distribution day. This gives time for the suppliers to prepare their orders for delivery to the hub distribution point. For Stroudco this is midnight on the Wednesday preceding the next distribution day.
+
+Once one order period has closed then consumers accessing the site may place orders for the following distribution day (eg. 2 weeks time) even though the current one has not taken place.
+
+After the order phase has closed (for Stroudco this is done on Thursday morning) the hub manager accesses the administration section and processes purchase orders (emailed to suppliers) and customer reminders (emailed to consumers).
+
+On the distribution day suppliers delivery orders, these are checked and received by the hub manager and actual goods received are allocated to customers. Goods are sorted by customer ready for pick-up later in the day.
+
 
 == Types of User ==
 
@@ -45,13 +58,3 @@ The hub manager adds member payments (Receipts) to the system when paid by chequ
 They access the system the morning after an ordering period closes and process purchase orders which are emailed to suppliers. Members are also emailed reminders to collect their order from the distribution centre.
 
 On the distribution day the hub manager receives supplier deliveries and logs them on the system. Sorts these into member orders for pick-up (typically with the help of volunteers), pays suppliers, modifies member invoices (if needed) and finally posts the invoices when all is complete.
-
-== Order Cycle ==
-
-Consumers can place orders up to the cut off date, which is typically 2 full days before the next distribution day. This gives time for the suppliers to prepare their orders for delivery to the hub distribution point. For Stroudco this is midnight on the Wednesday preceding the next distribution day.
-
-Once one order period has closed then consumers accessing the site may place orders for the following distribution day (eg. 2 weeks time) even though the current one has not taken place.
-
-After the order phase has closed (for Stroudco this is done on Thursday morning) the hub manager accesses the administration section and processes purchase orders (emailed to suppliers) and customer reminders (emailed to consumers).
-
-On the distribution day suppliers delivery orders, these are checked and received by the hub manager and actual goods received are allocated to customers. Goods are sorted by customer ready for pick-up later in the day.
