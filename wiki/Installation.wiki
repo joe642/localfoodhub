@@ -2,6 +2,8 @@
 
 = Introduction =
 
+PLEASE NOTE THAT STROUDCO IS OFFERING THE SOFTWARE FREE OF CHARGE BUT HAS NO RESOURCES TO PROVIDE TECHNICAL SUPPORT OR DEVELOPMENT OF THE SOFTWARE TO SUIT OTHER APPLICATIONS.  STROUDCO CAN PROVIDE USER TRAINING AND SUPPORT BUT WOULD NEED TO CHARGE FOR THIS SERVICE.
+
 The food hub software will run stand alone but is usually run from within Joomla or other similar CMS to that provides the information pages on your website. Stroudco also runs phpbb forum software.
 
 These instructions assume you know how to set up MySQL database and are familar with phpmyadmin or other MySQL administration interface. This is usually available from your server hosting control panel.
