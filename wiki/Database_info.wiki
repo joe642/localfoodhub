@@ -4,7 +4,7 @@
 
 The database schema can be found in install/foodhub.sql which is used during installation to initialise the database. This page has a summary of what the tables are used for and explanation of some of the important fields.
 
-PLEASE NOTE THAT STROUDCO IS OFFERING THE SOFTWARE FREE OF CHARGE BUT HAS NO RESOURCES TO PROVIDE TECHNICAL SUPPORT OR DEVELOPMENT OF THE SOFTWARE TO SUIT OTHER APPLICATIONS.  STROUDCO CAN PROVIDE USER TRAINING AND SUPPORT BUT WOULD NEED TO CHARGE FOR THIS SERVICE.
+PLEASE NOTE THAT STROUDCO IS OFFERING THE SOFTWARE FREE OF CHARGE BUT CURRENTLY HAS NO RESOURCES TO PROVIDE TECHNICAL SUPPORT OR DEVELOPMENT OF THE SOFTWARE TO SUIT OTHER APPLICATIONS. However, we are looking for funding to run a training session for people taking on the Stroudco system. Please let us know if you are interested in this. 
 
 
 = Description of Database Tables =
