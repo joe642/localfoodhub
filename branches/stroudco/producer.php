@@ -76,17 +76,17 @@ if(!empty($_GET['order_date']))
 									WHERE product_supplier_id = {$_SESSION['producer']} 
 									AND product_available = 1 AND product_archived = 0)");
 			print mysql_error();
-		case 'configure_calendar':
+		case 'configure_calendar': // MODS Dec 2010 - careful with the date formats. Needs to be a timestamp for Smarty
 			if(empty($_REQUEST['manual_config']))
 			{
 				if(!check_date($order_date))
 				{
-					$smarty->assign('order_date', $order_date);
+					$smarty->assign('order_date', strtotime(str_replace("'","",$order_date)));
 					$smarty->display('register_date_form.tpl');
 					exit();
 					}
 				}
-			$smarty->assign('order_date',$order_date);
+			$smarty->assign('order_date',strtotime(str_replace("'","",$order_date)));
 			$smarty->assign('product_list',get_all_products($order_date));
 			include 'header.php';
 			include 'footer.php';
@@ -111,20 +111,24 @@ if(!empty($_GET['order_date']))
 				} else { // field was disabled
 					$current_price = $_POST['hidden_price'][$p_id];
 				}
-				if ($farm_gate) $price = $current_price / (1 + $_SESSION['markup']) / (1 + $VAT_rate);
-				else $price = $current_price;
-				// this means that there is a quantity and there should be a listing
-				//check if the listing already exists
-				mysql_query("INSERT INTO product_calendar
-								SET product_id = {$p_id},
-								order_date = FROM_UNIXTIME({$order_date}),
-								current_price = {$price},
-								quantity_available = {$quantity}
-								ON DUPLICATE KEY UPDATE current_price = {$price}, quantity_available = {$quantity}");
 				
+				// only insert/update if there is a change to the quantity or price
+				if ($current_price != $_POST['hidden_price'][$p_id] || $quantity != $_POST['hidden_available'][$p_id]/1) {
 				
+					if ($farm_gate) $price = $current_price / (1 + $_SESSION['markup']) / (1 + $VAT_rate);
+					else $price = $current_price;
+					// this means that there is a quantity and there should be a listing
+					//check if the listing already exists
+					mysql_query("INSERT INTO product_calendar
+									SET product_id = {$p_id},
+									order_date = FROM_UNIXTIME({$order_date}),
+									current_price = {$price},
+									quantity_available = {$quantity}
+									ON DUPLICATE KEY UPDATE current_price = {$price}, quantity_available = {$quantity}");
 				}
-			header("location: producer.php?function=configure_calendar&order_date={$order_date}");
+				
+			}
+			header("location: producer.php?function=configure_calendar&order_date=" . strftime("%F", $order_date) );
 			exit();
 					
 				
@@ -233,7 +237,9 @@ elseif(!empty($_REQUEST['function']))
 			if(empty($emptycheck)) $product_default_quantity_available = 'NULL';
 			$product_cost = trim($product_cost,"'");
 			$product_cost = floatval($product_cost);
-			if($farm_gate) 	$product_cost = $product_cost / (1 + $oldproduct['product_markup'])/(1 + $oldproduct['product_VAT_rate']);
+			// MODS 1-Jan-2011: Need to use the selected vat rate in this calc, not the old VAT rate
+			// if($farm_gate) 	$product_cost = $product_cost / (1 + $oldproduct['product_markup'])/(1 + $oldproduct['product_VAT_rate']);
+			if($farm_gate) 	$product_cost = $product_cost / (1 + $oldproduct['product_markup'])/(1 + $product_VAT_rate);
 			$upd_pic = "";
 			if ($_FILES['product_pic']['name'] <> "") {
 				 if (save_product_pic($product_id, $_FILES['product_pic']['name'], $_FILES['product_pic']['tmp_name'], $_FILES['product_pic']['type'])) {

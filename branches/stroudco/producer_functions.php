@@ -238,9 +238,10 @@ function make_select_lists()
 		}
 	$smarty->assign('categories',$categories);
 	
+	// MODS 1-Jan-2011: changed VAT rate - should move this into database table
 	$smarty->assign('VAT_rates',array('0.00' => 'Exempt or Zero',
-					'0.050' => 'Low rate (5%)',
-					'0.175' => 'Full VAT (17.5%)'));
+					'0.05' => 'Low rate (5%)',
+					'0.2' => 'Full VAT (20%)'));
 	}
 
 include_once 'product_pic.php';
