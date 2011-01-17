@@ -49,7 +49,7 @@ function get_config_value($name)
 {
 	$query_result = mysql_query("SELECT value FROM config WHERE name = \"{$name}\"");
 	$value = mysql_result($query_result,0);
-	if(empty($value)) return FALSE;
+	if(empty($value)) return 0;
 	return $value;
 	}
 	
